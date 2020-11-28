@@ -33,8 +33,6 @@ Adafruit_MLX90614 mlx = Adafruit_MLX90614();
 void high_temp_door_interupt();
 void low_temp_door_interupt();
 
-int Stage = 0;
-
 
 void setup() {
   Serial.begin(9600);

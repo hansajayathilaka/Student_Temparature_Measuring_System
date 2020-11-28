@@ -9,6 +9,12 @@ float temp() {
   return val;
 }
 
+int len_to_hand() {
+  const int val = analogRead(ir_pin);
+  //  Serial.println(val);
+  return val;
+}
+
 void low_temp_door_signal_on() {
   digitalWrite(low_temp_led_pin, HIGH);
   digitalWrite(high_temp_led_pin, LOW);
